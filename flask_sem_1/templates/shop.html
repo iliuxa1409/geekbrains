@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Online Shop{% endblock %}</title>
+</head>
+<body>
+    <header>
+        <h1>{% block header %}Welcome to Our Online Shop{% endblock %}</h1>
+        <nav>
+            {% block navigation %}
+            <ul>
+                <li><a href="/clothes/">Clothes</a></li>
+                <li><a href="/shoes/">Shoes</a></li>
+                <li><a href="/jacket/">Jacket</a></li>
+            </ul>
+            {% endblock %}
+        </nav>
+    </header>
+
+    <main>
+        <section class="products">
+            <h2>{% block main_heading %}Our Products{% endblock %}</h2>
+            {% block main_content %}
+            <ul>
+                <li>Clothing item 1</li>
+                <li>Clothing item 2</li>
+                <li>Clothing item 3</li>
+                <li>Jacket item 1</li>
+                <li>Jacket item 2</li>
+                <li>Jacket item 3</li>
+                <li>Shoes item 1</li>
+                <li>Shoes item 2</li>
+                <li>Shoes item 3</li>
+            </ul>
+            {% endblock %}
+        </section>
+    </main>
+
+    <footer>
+        <p>{% block footer %}&copy; 2024 Online Shop. All rights reserved.{% endblock %}</p>
+    </footer>
+</body>
+</html>
