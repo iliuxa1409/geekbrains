@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{{ super() }}
+<form action="number" method="post">
+    <input type="number" name="num" placeholder="Input your number">
+    <input type="submit" value="Push me">
+</form>
+{% endblock %}
